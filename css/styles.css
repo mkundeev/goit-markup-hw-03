@@ -63,9 +63,39 @@ button {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
+  border-bottom: 1px solid #ececec;
 }
+.site-nav,
+.contacts-nav,
+.main-nav {
+  display: flex;
+}
+.main-nav {
+  align-items: center;
+}
+.site-nav {
+  margin-left: 93px;
+}
+.contacts-nav {
+  margin-left: auto;
+}
+
+.site-nav .item:not(:last-child),
+.contacts-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
+}
+.contacts-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -117,6 +147,9 @@ button {
   margin-bottom: 10px;
   margin-top: 0;
 }
+.features-list {
+  display: flex;
+}
 .features-list .text {
   font-size: 14px;
   font-weight: 400;
@@ -124,6 +157,18 @@ button {
 }
 .features-container {
   width: 270px;
+}
+.features-container:not(:last-child) {
+  margin-right: 30px;
+}
+.job-list {
+  display: flex;
+}
+.job-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list {
+  display: flex;
 }
 .team-list .title {
   color: var(--title-text-color);
@@ -145,7 +190,9 @@ button {
   padding-bottom: 30px;
   text-align: center;
 }
-
+.team-container:not(:last-child) {
+  margin-right: 30px;
+}
 /* футер */
 .page-footer {
   background-color: var(--footer-hero-background-color);
@@ -172,6 +219,7 @@ button {
 .contacts-footer {
   color: rgba(255, 255, 255, 0.6);
 }
+
 /* кнопки */
 .button {
   color: var(--title-text-color);
@@ -222,12 +270,27 @@ button {
 }
 .portofolio-list {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 .examples-container {
   width: 370;
   padding-bottom: 20px;
 }
+.portfolio-btn:not(:last-child) {
+  margin-right: 8px;
+}
 
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.examples-container:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.examples-container:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
 /*цвет основного тексат #212121
 цвет мелкого текста #757575
 цвет ссылки rgba(255, 255, 255, 0.6)
