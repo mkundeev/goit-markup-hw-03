@@ -10,11 +10,7 @@
 html {
   box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -23,6 +19,8 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -33,6 +31,12 @@ button {
   font-family: inherit;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /* Логотип */
 .logo-header {
   color: #000000;
@@ -50,6 +54,7 @@ button {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
+  background-color: tomato;
 }
 .site-nav .link {
   color: var(--title-text-color);
@@ -67,14 +72,19 @@ button {
 /* герой */
 .hero {
   background: var(--footer-hero-background-color);
+  outline: 2px solid tomato;
 }
 .hero-title {
   color: var(--primery-background-color);
   font-size: 44px;
   font-weight: 900;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
   line-height: 1.36;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 30;
+  width: 696px;
 }
 /* секции */
 .section-title {
@@ -138,6 +148,9 @@ button {
   font-weight: 500;
   line-height: 1.63;
   text-align: center;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
 }
 
 .button:hover {
@@ -151,6 +164,9 @@ button {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.88;
+  padding: 10px 32px;
+  min-height: 50px;
+  min-width: 200;
 }
 .button.main:hover {
   background-color: #188ce8;
