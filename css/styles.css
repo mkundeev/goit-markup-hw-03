@@ -46,6 +46,9 @@ button {
   padding-right: 15px;
   margin: 0 auto;
 }
+.no-padding-top {
+  padding-top: 0;
+}
 /* Логотип */
 .logo-header {
   color: #000000;
