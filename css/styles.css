@@ -300,10 +300,6 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
-.examples-container img {
-  display: block;
-}
-
 .examples-container:not(:nth-child(3n)) {
   margin-right: 30px;
 }
