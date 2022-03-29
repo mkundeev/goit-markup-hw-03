@@ -109,7 +109,7 @@ button {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts-nav .link:hover,
-.contacts-nav .lonk:focus {
+.contacts-nav .link:focus {
   color: var(--accent-color);
 }
 /* main */
